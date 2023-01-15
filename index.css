@@ -1,0 +1,219 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #008080;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+  }
+  header h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    align-items: center;
+    width: auto;
+
+  }
+  
+  /* Navigation styles */
+  nav {
+    background-color: #008080;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .description img{
+    margin-top: 10px;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex;
+    flex-direction: row;
+    max-width: 20vw;
+    max-height: 20vh;
+    gap: 10px;
+
+  }
+.description p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    margin: 0;
+    background-color: #006060;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Login section styles */
+  .login-section{
+    display: block;
+    align-items: center;
+    padding: 10px;
+    width: 50%;
+    background-origin: padding-box;
+    /*background-color: #008080;*/
+  }
+
+  form h2 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+  background-color: #008080;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+form button{
+  background-color: #008080;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+form button:hover{
+  color: white;
+  background-color: #006060;
+}
+form div{
+  display: none ;
+}
+form input[type="submit"]:hover {
+  background-color: #006060;
+}
+/*
+form hr {
+  margin: 40px 0;
+  border-top: 1px solid #ccc;
+}*/
+/* Department section styles */
+  .department-section {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .department-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .department-section nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .department-section nav a {
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    background-color: #008080;
+  }
+  .department-section nav a:hover{
+    color:white;
+    background-color: rgba(0,8, 8, 0.6);
+  }
+  
+  /* E-Filing section styles */
+  .efiling-section {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .efiling-section a {
+    color: blue;
+    text-decoration: none;
+  }
+  .efiling-section .form-e-sys{
+    align-items: center;
+    width: 50vw;
+    padding: 0;
+    margin-left: 10em;
+  }
+
+.efiling-section .form-e-sys input{
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.efiling-section .form-e-sys .btn{
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  text-align: center;
+  background-color: #008080;
+  justify-content: center;
+  
+}
+
+.efiling-section .form-e-sys label{
+  align-content: center;
+  display: flex;
+  width: 20%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #006060
+}
+  
+  /* Footer styles */
+  footer {
+    background-color: #008080;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  footer p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+  }
