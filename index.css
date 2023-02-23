@@ -1,61 +1,159 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
 /* Global styles */
 body {
-    font-family: Arial, sans-serif;
+  /* font-family: 'Josefin Sans', sans-serif; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
   /* Header styles */
-  header {
+  .header {
     background-color: #008080;
     color: white;
     padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height:80px;
+    padding:0 100px;
   }
-  header h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  .logo{
+    height: 100px;
+    width: 100px;
+    align-items: left;
+    display: flex;
+    /* flex-direction: column; */
+  }
+  .logo img{
+    position: absolute;
+    top: 2vh; left: 40px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo h1{
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
     text-align: left;
     align-items: left;
     width: auto;
     font-size: medium;
+    font-weight: bold;
+    margin-top: 20px;
+    position: inherit;
+  }
+  @media only screen and (max-width:900px){
+    .logo h1{
+      display: none;
+    }}
+
+  .hamburger{
+    display: none;
   }
   
   /* Navigation styles */
-  body nav {
+  .nav-bar {
     background-color: #008080;
+    display: flex;
     color: white;
     display: inline-block;
     justify-content:space-between;
     padding: 5px;
+    width: auto;
   }
-  body nav ul{
+.nav-bar ul{
+    list-style-type:none;
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 0 2px;
+  }
+  .nav-bar ul li{
+    display: flex;
     list-style-type:none;
     display: inline-block;
     padding: 10px 20px;
   }
-  body nav ul li{
-    list-style-type:none;
-    display: inline-block;
-    padding: 10px 20px;
-
-    }
-  body nav a {
-    color: white;
+  
+  .nav-bar ul li a{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 5px 15px;
+    transition: 0.2s;
+    margin: 0 2px;
     text-decoration: none;
-    border: 1px solid white;
-    padding: 5px;
-    border-radius: 10px;
-    margin: 5px;
+    border: 1px solid white;   
   }
-  body nav a:hover{
-    transform: scale(1.3);
-    background-color: #006060;
+ 
+ .nav-bar ul li a:hover{
+  background-color: #006060;
+  color: #fff;
+  transform: scale(1.2);
+  transition: 0.2s;
+ }
+ .nav-bar ul li a.active{
+  color: #006060;
+  background: #fff;
+ }
+
+  @media only screen and (max-width:1320px){
+    .header{
+      padding: 0 50px;
+    }}
+  @media only screen and (max-width:1100px){
+    .header{
+      padding: 0 30px;
+    }}
+  @media screen and (max-width:500px){
+    .nav-bar ul{
+      display: none;
+    }
+  .hamburger{
+    display: block;
+  }
+}
+
+  @media only screen and (max-width:900px){
+    .hamburger{
+      display: block;
     cursor: pointer;
-    transition: 4ms;
+  } 
+    .hamburger .line{
+      width: 30px;
+      height: 3px;
+      background-color: #fff;
+      margin: 6px 0;
+    }
+    .nav-bar ul li{
+      list-style-type:none;
+      display: none;
+      padding: 10px 20px;
+    }
+    .nav-bar{
+      height: 100px;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      background:#006060 ;
+      transition: 0.2s;
+      width: 100vw;
+    }
+    .nav-bar ul{
+      display: block;
+      width: fit-content;
+      margin: 30px auto 0 auto;
+    }
   }
+  
   .emergency button{
     background-color: red;
     border: none;
@@ -70,10 +168,94 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     margin-right: 10px;
-  }
+    }
+    .images li{
+      display: grid;
+      grid-template-columns: repeat(3,1 fr);
+      /* display: flex; */
+      justify-content: center;
+      flex-direction: column;
+      /* margin: 5px; */
+      height: 50px;
+      /* background-color: black; */
+    }
+        
+    #image1 {
+      width: 50px;
+      height: 50px;
+      /* float: left; */
+      /* background-color: blue; */
+    }
+    
+    #image2 {
+      width: 50px;
+      height: 50px;
+      /* float: left;
+      background-color: red; */
+    }
+    
+    #image3 {
+      width: 50px;
+      height: 50px;
+      /* float: left; */
+      /* background-color: purple; */
+    }
+    
+    #image4 {
+      width: 50px;
+      height: 50px;
+      /* float: left; */
+      /* background-color: green; */
+    }
+    
+    #image5 {
+      width: 50px;
+      /* float: left; */
+      /* background-color: red; */
+      height: 50px;
+    }
+    #image6 {
+      width: 50px;
+      /* float: left; */
+      /* background-color: red; */
+      height: 50px;
+    }
+    #image7 {
+      width: 50px;
+      /* float: left; */
+      /* background-color: red; */
+      height: 50px;
+    }
+    #image8 {
+      width: 50px;
+      /* float: left; */
+      /* background-color: red; */
+      height: 50px;
+    }
+
+    .images img{
+      width: 90%;
+      /* align-items: flex; */
+      /* flex-direction: row; */
+      max-width: 20vw;
+      max-height: 20vh;      
+    }
+    /* @media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+  .img {
+    background-image: url(examples/images/image-768.jpg);
+  } */
+  .description .images{
+    display: grid;
+    grid-template-rows: repeat 3,1 fr;
+    background-size: cover;
+    justify-content: center;
+    flex-direction: row;
+  } 
   .description img{
+    display: grid;
     margin-top: 10px;
-    flex-direction: column;
     width: 100%;
     align-items: flex;
     flex-direction: row;
@@ -81,13 +263,13 @@ body {
     max-height: 20vh;
     gap: 10px;
   }
-.description p{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+.description .des{
+    /* font-family:Georgia, 'Times New Roman', Times, serif; */
     padding: 20px;
     margin: 0;
     background-color: #006060;
     color: white;
-    text-align: center;
+    text-align: left;
   }
   
   /* Login section styles */
@@ -270,3 +452,15 @@ form input[type="submit"]:hover {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bolder;
   }
+  /* @media screen and (min-width: 576x){
+    nav{
+      display:none;
+    }
+    
+  }
+  @media screen and (min-width: 768x){
+    body{
+
+    }
+    
+  } */
