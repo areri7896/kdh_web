@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 167, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    margin: auto;
+    width: auto;
+}
+h1{
+    color: #fff;
+    margin-top: 30vh;
+    text-align: center;
+    font-size: 30px;
+}
+h2{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+input{
+    background-color: #fff;
+    /* width: 80vw; */
+    height: 30vh;
+    border: flex;
+    border-radius: 20px;
+    color: #000;
+    font-size: 30px;
+    border:1px solid #000;
+}
+#chatLog{
+    font-size: 24px;
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    height: 20vh;
+    display: none;
+    margin: 10px 5px;
+    justify-content: center;
+    padding: 30px 0;
+}
+@media screen and (max-width:600px) {
+    input{
+        width: auto;
+        /* height: 20vh; */
+        transition: 0.5s 0.5s;
+        margin: auto 0;
+        align-items: center;
+    }
+    #chatLog{
+        font-size: 24px;
+        color: #fff;
+        background-color: #000;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        /* height: 15vh; */
+        width: auto;
+        display: flex;
+        margin: 10px 5px;
+        justify-content: center;
+        padding: 30px 0;
+        transition: 0.5s 0.5s;
+    }
+}
